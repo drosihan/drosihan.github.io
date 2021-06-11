@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7F4EF;
+    font-family: 'Fraunces', serif;
+}
+
+h1{
+    color: #293E33;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    border-bottom: 2px solid #293E33;
+  }
+
+.navbar + .content {
+    padding-top: 100px;
+}
+
+nav{
+    flex: auto;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navsearch{
+    border: none;
+    padding: 5px;
+    margin-right: 30px;
+    color: #293E33;
+    background: #F7F4EF;
+}
+
+a {
+    text-decoration: none;
+    color: #293E33;
+}
+
+p {
+    color: #293E33;
+}
+
+.container {
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 45%;
+    padding: 30px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #293E33;
+    color: #fff; 
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+}
+
+.btn2{
+    display: inline-block;
+    background: #fff;
+    color: #293E33; 
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+}
+
+.navyfixer{
+    margin-top: 200px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
+}
+
+.col-4 h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+header .row{
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.blurb_container{
+    padding: 100px;
+}
+
+.blurb{
+    margin: 70px 0;
+    align-items: center;
+    background: #293E33;
+}
+
+.blurb h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.blurb p{
+    color: #fff;
+    text-align: center;
+}
+
+.inventory{
+    margin: 70px 0;
+    align-items: center;
+}
+
+.blog{
+    margin: 70px 0;
+    align-items: center;
+    background: #9EB4BF;
+}
+
+.blog h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+    padding: 70px;
+    color: #fff;
+}
+
+.inventory h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.col-3{
+    flex-basis: 50%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    color: #fff;
+    background: #293E33;
+    padding: 25px;
+    border-radius: 40px;
+}
+
+.col-3 img {
+    width: auto;
+    max-height: 400px;
+    padding: 25px;
+}
+
+.col-blog{
+    flex-basis: 50%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 0px;
+    border-radius: 40px;
+}
+
+.col-blog img {
+    align-items: center;
+    height: auto;
+    max-width: 600px;
+    padding: 15px;
+}
+
+.col-blog p{
+    color: #fff;
+}
+
+
+.contact{
+    margin: 70px 0;
+    align-items: center;
+    background: #D98E72;
+}
+
+.contact h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+    padding: 70px;
+    color: #fff;
+}
+
+.col-cont{
+    flex-basis: 50%;
+    min-width: 600px;
+    margin-bottom: 80px;
+    color: #fff;
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.col-cont input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #293E33;
+    color: #fff;
+    flex-basis: 50%;
+    min-width: 600px;
+    margin-bottom: 80px;
+    padding: 50px;
+}
+footer p {
+    color: #fff;
+    padding: 10px;
+}
+
+footer img{
+    max-width: 100%;
+    height: auto;
+}
+
+.menu_icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: none;
+    padding: 5px;
+    margin-right: 30px;
+    color: #293E33;
+    background: #F7F4EF;
+    border-bottom: 2px solid #293E33;
+}
+
+select:focus{
+    border: none;
+}
+
+.col-prod{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-prod img{
+    max-width: 80%;
+    padding-right: 40px;
+}
+
+.col-prod h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    
+}
+
+.small-img-row{
+    display: flex;
+    max-width: 435px;
+}
+
+.small-img-col{
+    flex-basis: 25%;
+}
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #293E33;
+    font-size: 12px;
+}
+
+td img{
+    height: auto;
+    width: 80px;
+    padding-right: 30px;
+
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    width: 100%;
+    max-width: 350px;
+    border-top: 3px solid #293E33;
+    background: #EAE4DB;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.calculator{
+    background: #EAE4DB;
+}
+
+.calculator table{
+    color: #293E33;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    nav ul { 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background:#293E33;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s
+    }
+    
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menu_icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col4, .col-blog, .col-cont{
+        flex-basis: 100%;
+    }
+    
+}

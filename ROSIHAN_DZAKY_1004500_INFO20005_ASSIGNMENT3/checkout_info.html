@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initiall-scale= 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Emporium: Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="container">
+       <div class="navbar" onscroll="myFunction()">
+           <div>
+               <a href="index.html" class="logo"><h1>Guitar Emporium</h1></a>
+            </div>
+           <nav>
+               <ul id="menu_items">
+                   <li><a href="inventory.html">Inventory</a></li>
+                   <li><a href="index.html">About Us</a></li>
+                   <li><a href="index.html">Services</a></li>
+               </ul>
+           </nav>
+           <input type="text" placeholder="Search" class="navsearch">
+           <a href="cart.html"><img src="/img/ico_cart.svg" width="30px" height="30px"></a>
+           <img src="/img/ico_menu.png" class="menu_icon" onclick="menutoggle()">          
+       </div>   
+    </header>
+
+    <div class="stickyfixer">
+        <div class="container">
+            <div class="row">
+                <div class="col-cont">      
+                    <form>
+                        <p>Full Name</p>
+                        <input type="text" placeholder="Full Name">
+                        <p>Email</p>
+                        <input type="email" placeholder="Email">
+                        <p>Phone</p>
+                        <input type="number" placeholder="Phone No.">
+                        <p>Street</p>
+                        <input type="text" placeholder="Street">
+                        <p>Suburb</p>
+                        <input type="text" placeholder="Suburb">
+                        <p>State</p>
+                        <select>
+                            <option>VIC</option>
+                            <option>NSW</option>
+                        </select>
+                        <p>Postcode</p>
+                        <input type="number" placeholder="Postcode">
+                        <p>Billing address same as shipping address?</p>
+                        <input type="checkbox">
+                    </form>
+                </div>
+                <div class="col-cont calculator">
+                    <div class="small-container cart-page">
+                        <table>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cart-info">
+                                        <img src="/img/prev_variant1.png">
+                                        <div>
+                                            <p>Fender Telecaster 2020</p>
+                                            <small>Price: $950.00</small><br>
+                                            <a href="">Remove</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>$50.00</td>
+                            </tr>
+            
+                            <tr>
+                                <td>
+                                    <div class="cart-info">
+                                        <img src="/img/cart_pedal.jpeg">
+                                        <div>
+                                            <p>Boss NF-1 Gate Noice Pedal</p>
+                                            <small>Price: $125.00</small><br>
+                                            <a href="">Remove</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>$50.00</td>
+                            </tr>
+            
+                            <tr>
+                                <td>
+                                    <div class="cart-info">
+                                        <img src="/img/cart_amp.jpeg">
+                                        <div>
+                                            <p>Fender Frontline amp</p>
+                                            <small>Price: $195.00</small><br>
+                                            <a href="">Remove</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>$50.00</td>
+                            </tr>
+                        </table>
+                    
+                    
+                    <div class="total-price">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>$1,260.00</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>$65.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$1,365.00</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <a href="checkout_payment.html" class="btn">Payment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+   <footer>
+      <div class="row">
+           <div class="col-cont">      
+               <ul>
+                   <h3>Adress</h3>
+                   <p>20 Lalor St, Port Melbourne, 3207</p>
+                   <h3>Phone</h3>
+                   <p>03 XXXX XXXX</p>
+                   <h3>Email</h3>
+                   <p>jake.guitarempo@fakemaill.com</p>
+                   <h3>Hours</h3>
+                   <p>Thursdays-Saturdays 11am-4pm</p>
+               </ul>
+           </div>
+           <div class="col-cont">
+                <h3>Follow Us</h3>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>LinkedIn</p>
+               <img src="/img/logo_payment.png">        
+           </div>
+           <p>Dzaky Rosihan, copyright &copy; 2021</p>
+      </div>
+   </footer>
+
+
+<script>
+   var menu_items = document.getElementById("menu_items");
+   menu_items.style.maxHeight = "0px";
+   function menutoggle(){
+       if (menu_items.style.maxHeight == "0px"){
+           menu_items.style.maxHeight = "20px";
+       }
+       else{
+           menu_items.style.maxHeight = "0px";
+       }
+   }
+</script>
+
+<script>
+   // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+ if (window.pageYOffset >= sticky) {
+   navbar.classList.add("sticky")
+ } else {
+   navbar.classList.remove("sticky");
+ }
+}
+</script>
+
+
+    
+</body>
+</html>
